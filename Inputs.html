@@ -6,34 +6,34 @@
     <title>Ejercicios de formularios</title>
 </head>
 <body>
-    <h1>Registro de Usuario</h1>
+    <h1><u>Registro de Usuario</u></h1>
     <form action="respuestas.php" method="post">
         <p>
-            <label for="usuario">Nombre de usuario:</label>
-            <input type="text" name="nombre" id="usuario">
+            <label for="usuario"><strong>Nombre de usuario:</strong></label>
+            <input type="text" name="nombre" id="usuario" placeholder="NickName">
         </p>
         <p>
-            <label for="password">Contraseña:</label>
-            <input type="password" name="password" id="password">
+            <label for="password"><strong>Contraseña:</strong></label>
+            <input type="password" name="password" id="password" placeholder="mínimo 8 dígitos">
         </p>
         <p>
-            <label for="mail">Correo electronico:</label>
-            <input type="mail" name="correo" id="mail">
+            <label for="mail"><strong>Correo electronico:</strong></label>
+            <input type="mail" name="correo" id="mail" placeholder="xxxxxx@xxx.com.es">
         </p>
         <p>
-            <label for="movil">número de telefono:</label>
-            <input type="number" name="numero de movil" id="movil">
+            <label for="movil"><strong>número de telefono:</strong></label>
+            <input type="number" name="numero de movil" id="movil" placeholder="(xx) xxx-xxxxxx">
         </p>
         <p>
-            <label for="birth">Fecha de nacimiento:</label>
+            <label for="birth"><strong>Fecha de nacimiento:</strong></label>
             <input type="date" name="nacimiento" id="birth">
         </p>
         <p>
-            <label for="experiencia">Años de experiencia:</label>
+            <label for="experiencia"><strong>Años de experiencia:</strong></label>
             <input type="range" name="experiencia" id="experiencia">
         </p>
         <p>
-            <label for="idioma">Idioma que hablas:</label>
+            <label for="idioma"><strong>Idioma que hablas:</strong></label>
         </p>
             <input type="checkbox" name="idioma" id="idioma">
             <label for="ingles">Ingles</label>
@@ -42,16 +42,34 @@
             <label for="español">Español</label>
         </p>
         <p>
-            <label for="genero">Género:</label>
+            <label for="genero"><strong>Género:</strong></label>
         </p>
         </p>
-            <input type="radio" name="male" id="male">
-            <label for="male">Masculino</label>
+            <input type="radio" name="genero" id="male">
+            <label for="male"><em>Masculino</em></label>
         <p>
-            <input type="radio" name="female" id="female">
-            <label for="female">Femenino</label>
+            <input type="radio" name="genero" id="female">
+            <label for="female"><em>Femenino</em></label>
         </p>
-
+        <p>
+            <label for="país">País:</label>
+            <select name="país" id="país">
+                <option value="EEUU">EEUU</option>
+                <option value="Argentina">Argentina</option>
+                <option value="España">España</option>
+            </select>
+        </p>
+        <p>
+            <label for="Biografía">Biografía:</label>
+        </p>
+        <p>
+            <textarea name="Biografía" id="Biografía" cols="50" rows="5"></textarea>
+        </p>
+        <p>
+            <button>
+                <label for="Enviar">Enviar</label>
+            </button>
+        </p>
 
 
     </body>
