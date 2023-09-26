@@ -20,6 +20,88 @@
         <p>correo_personal@gmail.com</p>
         <p>434 45442244</p>
       </address>
+      <form action="">
+        <fieldset>
+          <legend>Datos de Contacto</legend>
+          <ul>
+            <ul>
+              <label for="nombre">Nombre:</label>
+              <input type="text" name="nombre" />
+            </ul>
+          </ul>
+          <ul>
+            <ul>
+              <label for="email">Email:</label>
+              <input type="email" name="email" autocomplete="off" />
+            </ul>
+          </ul>
+          <ul>
+            <ul>
+              <label for="observaciones">Observaciones:</label>
+              <textarea
+                name="observaciones"
+                id="observaciones"
+                cols="30"
+                rows="3"
+                minlength="3"
+                maxlength="50"
+                name="observaciones"
+                placeholder="Escribe aquí lo que quieras"
+              ></textarea>
+            </ul>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Otros datos de interes</legend>
+          <ul>
+            <label for="telefono">telefono:</label>
+            <input type="tel" name="telefono" />
+          </ul>
+          <ul>
+            <label for="favorito">Número Favorito:</label>
+            <input type="num-favr" min="1" max="20" name="favorito" />
+          </ul>
+          <ul>
+            <label for="color-fav">Color favorito:</label>
+            <input type="color" name="color-fav" />
+          </ul>
+          <ul>
+            <label for="birth">Fecha de Nacimiento:</label>
+            <input type="date" name="birth" />
+          </ul>
+          <ul>
+            <label for="password">Contraseña:</label>
+            <input type="password" name="password" />
+          </ul>
+          <ul>
+            <input type="checkbox" name="check" value="acepto" checked />
+            <label for="check"
+              >Está de acuerdo con los términos y condiciones.</label
+            >
+          </ul>
+          <ul>
+            <label for="pregunta">Quieres ser mi amig@?</label>
+            <input type="radio" name="pregunta" id="pregunta" /><label
+              for="Amigo-si"
+              >SI</label
+            >
+            <input type="radio" name="pregunta" id="pregunta" /><label
+              for="Amigo-no"
+              >NO</label
+            >
+          </ul>
+          <ul>
+            <label for="opciones">Selecciona tu comida favorita:</label>
+            <select name="opciones" id="opciones">
+              <option value="Pastas">Pastas</option>
+              <option value="Pizza">Pizza</option>
+              <option value="Carne" selected>Carne</option>
+            </select>
+          </ul>
+        </fieldset>
+      </form>
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpiar</button>
     </main>
     <!-- <p>
       <a href="/index.html">Click aquí para volver al inicio.</a>
