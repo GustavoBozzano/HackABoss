@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+body {
+  background-color: #bcb;
+  max-width: 1200px;
+  min-height: 100vh;
+}
+main {
+  padding: 2rem;
+  background-color: white;
+}
+#inicio {
+  background-image: url(/imagenes/image-Fest.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+#bg-inicio {
+  width: 50%;
+  min-width: 300px;
+  border-radius: 10%;
+  color: white;
+  margin: auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: justify;
+}
+header {
+  margin-bottom: 1.5rem;
+}
+
+#photo {
+  width: 200px;
+  border: 4px solid gray;
+  border-radius: 50%;
+}
+iframe {
+  border: 2px solid brown;
+  border-radius: 10px;
+}
+.listas {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  min-width: 60%;
+}
+.listas li {
+  margin-left: 3rem;
+}
+.datos {
+  margin: 1rem;
+}
+.campos {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}

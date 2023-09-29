@@ -5,79 +5,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="GJB" />
+    <link rel="stylesheet" href="/styles.css" />
     <title>Práctica HTML | Inicio</title>
-    <style>
-      img {
-        width: 200px;
-      }
-    </style>
   </head>
   <!-- seccion body = cuerpo princial -->
   <body>
     <header>
       <h1>Gustavo</h1>
       <nav>
-        <li><a href="/index.html">Comienzo</a></li>
-        <li><a href="/secciones/about.html">Sobre mí</a></li>
-        <li><a href="/secciones/contact.html">Mis datos de Contacto</a></li>
+        <ul>
+          <li><a href="/index.html">Comienzo</a></li>
+          <li><a href="/secciones/about.html">Sobre mí</a></li>
+          <li><a href="/secciones/contact.html">Mis datos de Contacto</a></li>
+        </ul>
       </nav>
-      <img src="/imagenes/image.png" alt="nuestra cara al desarrollar web" />
     </header>
-    <main>
-      <h2>Gustavo Bozzano</h2>
-      <p>Pero QUE VIVA EL FUTBOOOOOL...!!!!</p>
+    <main id="inicio">
+      <div id="bg-inicio">
+        <img
+          src="/imagenes/image.png"
+          alt="nuestra cara al desarrollar web"
+          id="photo"
+        />
+        <h2>Gustavo Bozzano</h2>
+        <p>
+          <em>
+            Pero QUE VIVA EL FUTBOOOOOL...!!!! Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Ad laborum quia temporibus amet
+            corporis quaerat est voluptatibus officia, earum deserunt quasi, hic
+            quae distinctio corrupti maiores esse dolore. Nihil, vitae.
+          </em>
+        </p>
+      </div>
 
       <!-- <p>¡Esto es solo el <strong>comienzo!</strong></p> -->
+      <!--   TODO EL FORMULARIO OCULTO
 
-      <form action="respuestas.php" method="post">
-        <label for="nombre">Nombre</label>
-        <input
+        <form action="respuestas.php" method="post">
+          <label for="nombre">Nombre</label>
+          <input
           type="text"
           name="nombre"
           placeholder="ingresa tu nombre"
           id="nombre"
-        />
-
-        <label for="correo">Correo</label>
-        <input
+          />
+          
+          <label for="correo">Correo</label>
+          <input
           type="mail"
           name="correo"
           placeholder="ingresa tu correo"
           id="correo"
           required
-        />
-
-        <label for="password">Password</label>
-        <input
+          />
+          
+          <label for="password">Password</label>
+          <input
           type="password"
           name="contraseña"
           placeholder="ingresa tu contraseña"
           id="contraseña"
           required
-        />
-
-        <label for="edad">Edad</label>
-        <input
+          />
+          
+          <label for="edad">Edad</label>
+          <input
           type="number"
           name="edad"
           placeholder="ingresa tu edad"
           id="edad"
           value="1234"
           readonly
-        />
-
-        <fieldset>
-          <legend>Datos obligatorios</legend>
-          <label for="nombre">Nombre</label>
-          <input
+          />
+          
+          <fieldset>
+            <legend>Datos obligatorios</legend>
+            <label for="nombre">Nombre</label>
+            <input
             type="text"
             name="nombre"
             placeholder="ingresa tu nombre"
             id="nombre"
-          />
-
-          <label for="correo">Correo</label>
-          <input
+            />
+            
+            <label for="correo">Correo</label>
+            <input
             type="mail"
             name="correo"
             placeholder="ingresa tu correo"
@@ -85,16 +97,14 @@
             required
           />
         </fieldset>
-
+        
         <fieldset>
           <legend>Sexo</legend>
           <label>H:</label>
-          <!-- <input type="text" name="sexo" placeholder="sexo" id="sexo" /> -->
           <input type="checkbox" name="Hombre" />
           <label>M:</label>
-          <!-- <input type="text" name="sexo" placeholder="sexo" id="sexo" /> -->
           <input type="checkbox" name="Mujer" />
-
+          
           <label for="sexo2">Seleccione</label>
           <select name="sexo2" id="sexo2">
             <option value="cualquiera">Seleccione una opcion</option>
@@ -108,7 +118,7 @@
         </fieldset>
         <button type="submit" disabled>Enviar</button>
       </form>
-    </main>
+    --></main>
     <!-- <p>
       <a href="/secciones/about.html"
         >Click aquí si quieres conocer mas de mi</a
