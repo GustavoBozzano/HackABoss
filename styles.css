@@ -16,6 +16,9 @@ body {
 main {
   padding: 2rem;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #inicio {
   background-image: url(/imagenes/image-Fest.png);
@@ -34,7 +37,29 @@ main {
   text-align: justify;
 }
 header {
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
+  background-color: #333;
+  color: white;
+  height: 4.5rem;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin-left: 3rem;
+}
+header nav ul {
+  margin-right: 3rem;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li {
+  padding: 0.5rem 1rem;
+}
+header nav ul li:hover {
+  background-color: #555;
+  border-radius: 5px;
 }
 
 #photo {
@@ -60,4 +85,58 @@ iframe {
 .campos {
   margin-bottom: 1.5rem;
   padding: 1rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+input,
+textarea {
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 0.7rem;
+  display: block;
+  font-size: 1rem;
+  border: none;
+  border-radius: 3px;
+  background-color: whitesmoke;
+}
+.one-line {
+  display: flex;
+  align-items: baseline;
+}
+
+header ul {
+  list-style: none;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+main ul.buttons li {
+  width: 49%;
+}
+main ul.buttons li button {
+  border: none;
+  width: 100%;
+  padding: 0.7rem;
+  color: white;
+  background-color: #666;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+main ul.buttons li button:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+footer {
+  background-color: #333;
+  color: white;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+fieldset li {
+  list-style: none;
 }

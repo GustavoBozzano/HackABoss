@@ -10,9 +10,11 @@
     <header>
       <h1>Gustavo</h1>
       <nav>
-        <li><a href="/index.html">Comienzo</a></li>
-        <li><a href="/secciones/about.html">Sobre mí</a></li>
-        <li><a href="/secciones/contact.html">Mis datos de Contacto</a></li>
+        <ul>
+          <li><a href="/index.html">Comienzo</a></li>
+          <li><a href="/secciones/about.html">Sobre mí</a></li>
+          <li><a href="/secciones/contact.html">Contacto</a></li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -25,19 +27,15 @@
         <fieldset class="campos">
           <legend>Datos de Contacto</legend>
           <ul>
-            <ul>
+            <li>
               <label for="nombre">Nombre:</label>
               <input type="text" name="nombre" />
-            </ul>
-          </ul>
-          <ul>
-            <ul>
+            </li>
+            <li>
               <label for="email">Email:</label>
               <input type="email" name="email" autocomplete="off" />
-            </ul>
-          </ul>
-          <ul>
-            <ul>
+            </li>
+            <li>
               <label for="observaciones">Observaciones:</label>
               <textarea
                 name="observaciones"
@@ -49,60 +47,68 @@
                 name="observaciones"
                 placeholder="Escribe aquí lo que quieras"
               ></textarea>
-            </ul>
+            </li>
           </ul>
         </fieldset>
         <fieldset class="campos">
           <legend>Otros datos de interes</legend>
           <ul>
-            <label for="telefono">telefono:</label>
-            <input type="tel" name="telefono" />
-          </ul>
-          <ul>
-            <label for="favorito">Número Favorito:</label>
-            <input type="num-favr" min="1" max="20" name="favorito" />
-          </ul>
-          <ul>
-            <label for="color-fav">Color favorito:</label>
-            <input type="color" name="color-fav" />
-          </ul>
-          <ul>
-            <label for="birth">Fecha de Nacimiento:</label>
-            <input type="date" name="birth" />
-          </ul>
-          <ul>
-            <label for="password">Contraseña:</label>
-            <input type="password" name="password" />
-          </ul>
-          <ul>
-            <input type="checkbox" name="check" value="acepto" checked />
-            <label for="check"
-              >Está de acuerdo con los términos y condiciones.</label
-            >
-          </ul>
-          <ul>
-            <label for="pregunta">Quieres ser mi amig@?</label>
-            <input type="radio" name="pregunta" id="pregunta" /><label
-              for="Amigo-si"
-              >SI</label
-            >
-            <input type="radio" name="pregunta" id="pregunta" /><label
-              for="Amigo-no"
-              >NO</label
-            >
-          </ul>
-          <ul>
-            <label for="opciones">Selecciona tu comida favorita:</label>
-            <select name="opciones" id="opciones">
-              <option value="Pastas">Pastas</option>
-              <option value="Pizza">Pizza</option>
-              <option value="Carne" selected>Carne</option>
-            </select>
+            <li>
+              <label for="telefono">telefono:</label>
+              <input type="tel" name="telefono" />
+            </li>
+            <li>
+              <label for="favorito">Número Favorito:</label>
+              <input type="num-favr" min="1" max="20" name="favorito" />
+            </li>
+            <li class="one-line">
+              <label for="color-fav">Color favorito:</label>
+              <input type="color" name="color-fav" />
+            </li>
+            <li>
+              <label for="birth">Fecha de Nacimiento:</label>
+              <input type="date" name="birth" />
+            </li>
+            <li>
+              <label for="password">Contraseña:</label>
+              <input type="password" name="password" />
+            </li>
+            <li class="one-line">
+              <label for="check"
+                >Está de acuerdo con los términos y condiciones.</label
+              >
+              <input type="checkbox" name="check" value="acepto" checked />
+            </li>
+            <li class="one-line">
+              <label for="pregunta">Quieres ser mi amig@?</label>
+              <input type="radio" name="pregunta" id="preguntaSI" /><label
+                for="Amigo-si"
+                >SI</label
+              >
+              <input type="radio" name="pregunta" id="preguntaNO" /><label
+                for="Amigo-no"
+                >NO</label
+              >
+            </li>
+            <li>
+              <label for="opciones">Selecciona tu comida favorita:</label>
+              <select name="opciones" id="opciones">
+                <option value="Pastas">Pastas</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Carne" selected>Carne</option>
+              </select>
+            </li>
           </ul>
         </fieldset>
       </form>
-      <button type="submit">Enviar</button>
-      <button type="reset">Limpiar</button>
+      <ul class="buttons">
+        <li>
+          <button type="submit">Enviar</button>
+        </li>
+        <li>
+          <button type="reset">Limpiar</button>
+        </li>
+      </ul>
     </main>
     <!-- <p>
       <a href="/index.html">Click aquí para volver al inicio.</a>
