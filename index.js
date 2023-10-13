@@ -145,3 +145,40 @@ const { nombre, apellido, carrera } = estudiante;
 console.log(nombre);
 console.log(apellido);
 console.log(carrera);
+
+// ejercicio 23
+const numbers = [1, 2, 3, 4, 5, 6];
+console.log(`el valor del 5to elemento del Array es: ${numbers[4]}`);
+
+// ejercicio 24
+const colores = ["rojo", "azul", "verde", "amarillo", "naranja"];
+for (const color of colores) {
+  console.log(color);
+}
+
+// ejercicio 25
+const frutas = ["manzana", "naranja", "uva", "plátano", "kiwi"];
+frutas.push("fresa", "mango");
+console.log(frutas);
+console.log(`el largo del Arrays es ${frutas.length}`);
+
+// ejercicio 26
+const frutas2 = ["manzana", "naranja", "uva", "plátano", "kiwi"];
+const frutDelete = frutas2.splice(1, 2, "fresa", "mango");
+console.log(frutas2);
+console.log(frutDelete);
+
+// ejercicio 27
+const frutas3 = ["manzana", "naranja", "uva", "plátano", "kiwi"];
+if (frutas3.includes("uva")) {
+  console.log(`El array contiene la fruta UVA`);
+} else {
+  console.log(`El Array no contiene UVA`);
+}
+if (frutas3.includes("cereza")) {
+  console.log(`Contiene CEREZA`);
+} else {
+  console.log(`No contiene CEREZA`);
+}
+
+// ejercicio 28
