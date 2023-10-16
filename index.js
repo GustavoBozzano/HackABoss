@@ -182,3 +182,26 @@ if (frutas3.includes("cereza")) {
 }
 
 // ejercicio 28
+const animales = ["gato", "elefante", "perro", "jirafa", "tigre"];
+const animFive = animales.find((animal) => animal.length > 5);
+console.log(animFive);
+
+// ejercicio 29
+const animales2 = ["gato", "elefante", "perro", "jirafa", "tigre"];
+const newAnimales = animales2.map((animal) => animal.length);
+console.log(newAnimales);
+
+// ejercicio 30
+const numeros30 = [5, 12, 8, 16, 7, 11];
+const filterNum = numeros30.filter((numeros) => numeros > 10);
+console.log(filterNum);
+
+// ejercicio 31
+const numeros31 = [1, 2, 3, 4, 5];
+const prodNum = numeros31.reduce((acumula, actual) => acumula * actual);
+console.log(prodNum);
+
+// ejercicio 32
+const numeros32 = [18, 5, 32, 7, 15];
+const orden = numeros32.sort((a, b) => a - b);
+console.log(orden);
