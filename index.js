@@ -205,3 +205,138 @@ console.log(prodNum);
 const numeros32 = [18, 5, 32, 7, 15];
 const orden = numeros32.sort((a, b) => a - b);
 console.log(orden);
+
+/*********************************************************************************************************** */
+class User {
+  constructor(names, surname, age) {
+    this.names = names;
+    this.surname = surname;
+    this.age = age;
+  }
+  get greet() {
+    return `Hola, mi nombre es ${this.names}, mi apellido es ${this.surname} y tengo ${this.age} años`;
+  }
+}
+const user1 = new User("Gus", "Bozzano", 46);
+
+console.log(user1);
+console.log(user1.greet);
+/*********************************************************************************************************** */
+// ejercicio 33
+const jsonEmpleados =
+  '[{"nombre":"Ana","salario":3500},{"nombre":"Pedro","salario":2000},{"nombre":"Marta","salario":4000}]';
+const empleados = JSON.parse(jsonEmpleados);
+empleados.forEach((empleado) => {
+  if (empleado.salario > 3000) {
+    console.log(empleado.nombre);
+  }
+});
+/*********************************************************************************************************** */
+// ejercicio 34
+const textoJson =
+  '[{"nombre":"Ana","salario":3500},{"nombre":"Pedro","salario":2000},{"nombre":"Marta","salario":4000}]';
+const nuevoTexto = JSON.parse(textoJson);
+console.log(nuevoTexto);
+/*********************************************************************************************************** */
+// ejercicio 35
+(function (min, max) {
+  const numer = Math.floor(Math.random() * (max - min + 1)) + min;
+  console.log(numer);
+})(8, 10);
+/*********************************************************************************************************** */
+// ejercicio 36
+function contador() {
+  let suma = 0;
+  return function () {
+    suma = suma + 1;
+    console.log(`se pidió ${suma} veces`);
+  };
+}
+const numContador = contador();
+
+numContador();
+numContador();
+numContador();
+numContador();
+numContador();
+
+/*********************************************************************************************************** */
+function operacion1(callback) {
+  setTimeout(() => {
+    console.log("Operación 1 completada");
+    callback();
+  }, 1000);
+}
+function operacion2(callback) {
+  setTimeout(() => {
+    console.log("Operación 2 completada");
+    callback();
+  }, 1000);
+}
+function operacion3(callback) {
+  setTimeout(() => {
+    console.log("Operación 3 completada");
+    callback();
+  }, 1000);
+}
+function operacion4(callback) {
+  setTimeout(() => {
+    console.log("Operación 4 completada");
+    callback();
+  }, 1000);
+}
+function operacion5(callback) {
+  setTimeout(() => {
+    console.log("Operación 5 completada");
+    callback();
+  }, 1000);
+}
+function operacion6(callback) {
+  setTimeout(() => {
+    console.log("Operación 6 completada");
+    callback();
+  }, 1000);
+}
+function operacion7(callback) {
+  setTimeout(() => {
+    console.log("Operación 7 completada");
+    callback();
+  }, 1000);
+}
+function operacion8(callback) {
+  setTimeout(() => {
+    console.log("Operación 8 completada");
+    callback();
+  }, 1000);
+}
+function operacion9(callback) {
+  setTimeout(() => {
+    console.log("Operación 9 completada");
+    callback();
+  }, 1000);
+}
+function operacion10() {
+  setTimeout(() => {
+    console.log("Operación 10 completada");
+  }, 1000);
+}
+
+operacion1(() => {
+  operacion2(() => {
+    operacion3(() => {
+      operacion4(() => {
+        operacion5(() => {
+          operacion6(() => {
+            operacion7(() => {
+              operacion8(() => {
+                operacion9(() => {
+                  operacion10();
+                });
+              });
+            });
+          });
+        });
+      });
+    });
+  });
+});
